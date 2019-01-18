@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-Xs-Wjt">
+                                <rect key="frame" x="16" y="20" width="343" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86941494161102373" green="0.86941494161102373" blue="0.86941494161102373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="exZ-K7-vXq">
+                                    <size key="itemSize" width="220" height="250"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MiH-pD-jjS" customClass="PhotoJournalCell" customModule="PhotoJournal" customModuleProvider="target">
+                                        <rect key="frame" x="61.5" y="0.0" width="220" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-YC-gzg">
+                                                    <rect key="frame" x="5" y="20" width="210" height="109"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="photoTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-9q-peE">
+                                                    <rect key="frame" x="8" y="140" width="204" height="21"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="createdDate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68l-vv-kWj">
+                                                    <rect key="frame" x="8" y="176" width="204" height="21"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-zn-zLu">
+                                                    <rect key="frame" x="162" y="202" width="30" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.81449825249999996" blue="0.97592237189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <state key="normal" title="..."/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wZM-9q-peE" firstAttribute="trailing" secondItem="MiH-pD-jjS" secondAttribute="trailingMargin" id="1Ey-EK-vnH"/>
+                                            <constraint firstItem="68l-vv-kWj" firstAttribute="trailing" secondItem="MiH-pD-jjS" secondAttribute="trailingMargin" id="5fX-dm-ETA"/>
+                                            <constraint firstItem="ilc-YC-gzg" firstAttribute="top" secondItem="MiH-pD-jjS" secondAttribute="top" constant="20" id="GPx-Iu-tqx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ilc-YC-gzg" secondAttribute="trailing" constant="5" id="GbC-LE-YBT"/>
+                                            <constraint firstItem="wZM-9q-peE" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leadingMargin" id="O14-QD-bmt"/>
+                                            <constraint firstItem="68l-vv-kWj" firstAttribute="top" secondItem="wZM-9q-peE" secondAttribute="bottom" constant="15" id="OET-5U-J7O"/>
+                                            <constraint firstItem="wZM-9q-peE" firstAttribute="top" secondItem="ilc-YC-gzg" secondAttribute="bottom" constant="11" id="T5k-hO-tMf"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="68l-vv-kWj" secondAttribute="bottom" constant="45" id="h7c-SY-O2C"/>
+                                            <constraint firstItem="68l-vv-kWj" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leadingMargin" id="qLu-ZF-6pC"/>
+                                            <constraint firstItem="ilc-YC-gzg" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leading" constant="5" id="sWK-dC-AWa"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="collectionPhoto" destination="ilc-YC-gzg" id="H1M-wk-Ym1"/>
+                                            <outlet property="createdDate" destination="68l-vv-kWj" id="oyI-gj-mDX"/>
+                                            <outlet property="optionsButton" destination="EhF-zn-zLu" id="Mr8-ES-cOA"/>
+                                            <outlet property="photoTitle" destination="wZM-9q-peE" id="h0h-Hp-3e4"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9H-XJ-Jda">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t32-Ls-wBu"/>
+                                    <barButtonItem systemItem="add" id="GfR-xH-G19">
+                                        <connections>
+                                            <segue destination="64c-Kx-BKk" kind="show" id="1Sc-Wx-Kfl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hWh-oh-9YG"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoCollection" destination="p4Z-Xs-Wjt" id="o2z-qm-8jU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--Add To Favorites View Controller-->
+        <scene sceneID="ii4-pt-UMe">
+            <objects>
+                <viewController id="64c-Kx-BKk" customClass="AddToFavoritesViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ui-cj-Q2b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N76-MD-w3U">
+                                <rect key="frame" x="0.0" y="33" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cancel" width="85" id="EJO-Rc-JpA"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mU8-QR-l64"/>
+                                    <barButtonItem title="Save" id="F7N-8w-XCJ"/>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JV2-v9-gtd">
+                                <rect key="frame" x="0.0" y="97" width="375" height="204"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="Hgh-zR-6X2"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vis-PM-RBC">
+                                <rect key="frame" x="0.0" y="301" width="375" height="322"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5Q-O7-YzE">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Photo Library" id="6O0-ki-mw0"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ssr-HV-ivo"/>
+                                    <barButtonItem style="done" systemItem="camera" id="CD0-iS-Fd3"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vis-PM-RBC" firstAttribute="top" secondItem="JV2-v9-gtd" secondAttribute="bottom" id="0RA-gD-oTg"/>
+                            <constraint firstItem="uio-df-IFX" firstAttribute="trailing" secondItem="JV2-v9-gtd" secondAttribute="trailing" id="1gY-9z-XPc"/>
+                            <constraint firstItem="JV2-v9-gtd" firstAttribute="leading" secondItem="uio-df-IFX" secondAttribute="leading" id="3RA-pB-Xvh"/>
+                            <constraint firstItem="Q5Q-O7-YzE" firstAttribute="trailing" secondItem="JV2-v9-gtd" secondAttribute="trailing" id="Cnb-4F-pmY"/>
+                            <constraint firstItem="uio-df-IFX" firstAttribute="trailing" secondItem="vis-PM-RBC" secondAttribute="trailing" id="EcN-ZR-7YM"/>
+                            <constraint firstItem="N76-MD-w3U" firstAttribute="top" secondItem="uio-df-IFX" secondAttribute="top" constant="13" id="HNq-Iz-2Xk"/>
+                            <constraint firstItem="N76-MD-w3U" firstAttribute="leading" secondItem="uio-df-IFX" secondAttribute="leading" id="JEt-cY-tHf"/>
+                            <constraint firstItem="N76-MD-w3U" firstAttribute="trailing" secondItem="uio-df-IFX" secondAttribute="trailing" id="PO0-3f-Piz"/>
+                            <constraint firstItem="JV2-v9-gtd" firstAttribute="top" secondItem="N76-MD-w3U" secondAttribute="bottom" constant="20" id="VeM-wp-tzq"/>
+                            <constraint firstItem="Q5Q-O7-YzE" firstAttribute="bottom" secondItem="uio-df-IFX" secondAttribute="bottom" id="Z9r-tO-mm8"/>
+                            <constraint firstItem="Q5Q-O7-YzE" firstAttribute="top" secondItem="vis-PM-RBC" secondAttribute="bottom" id="aks-Va-c56"/>
+                            <constraint firstItem="Q5Q-O7-YzE" firstAttribute="leading" secondItem="vis-PM-RBC" secondAttribute="leading" id="hG3-eT-Idf"/>
+                            <constraint firstItem="Q5Q-O7-YzE" firstAttribute="leading" secondItem="JV2-v9-gtd" secondAttribute="leading" id="rqM-PM-HCE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uio-df-IFX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1v-kV-6VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="27"/>
+        </scene>
+    </scenes>
+</document>
