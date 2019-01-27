@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo Journal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhotoJournalViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MiH-pD-jjS" customClass="PhotoJournalCell" customModule="PhotoJournal" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="MiH-pD-jjS" customClass="PhotoJournalCell" customModule="PhotoJournal" customModuleProvider="target">
                                         <rect key="frame" x="61.5" y="0.0" width="220" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -54,12 +54,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-zn-zLu">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-zn-zLu">
                                                     <rect key="frame" x="162" y="202" width="30" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="0.81449825249999996" blue="0.97592237189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="..."/>
+                                                    <connections>
+                                                        <action selector="editButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTp-1Z-Cyn"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -71,8 +73,11 @@
                                             <constraint firstAttribute="trailing" secondItem="ilc-YC-gzg" secondAttribute="trailing" constant="5" id="GbC-LE-YBT"/>
                                             <constraint firstItem="wZM-9q-peE" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leadingMargin" id="O14-QD-bmt"/>
                                             <constraint firstItem="68l-vv-kWj" firstAttribute="top" secondItem="wZM-9q-peE" secondAttribute="bottom" constant="15" id="OET-5U-J7O"/>
+                                            <constraint firstItem="EhF-zn-zLu" firstAttribute="top" secondItem="68l-vv-kWj" secondAttribute="bottom" constant="5" id="Pon-rv-UGp"/>
                                             <constraint firstItem="wZM-9q-peE" firstAttribute="top" secondItem="ilc-YC-gzg" secondAttribute="bottom" constant="11" id="T5k-hO-tMf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EhF-zn-zLu" secondAttribute="trailing" constant="20" id="ZhA-dF-7jO"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="68l-vv-kWj" secondAttribute="bottom" constant="45" id="h7c-SY-O2C"/>
+                                            <constraint firstItem="EhF-zn-zLu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MiH-pD-jjS" secondAttribute="leading" symbolic="YES" id="k6v-BE-TNs"/>
                                             <constraint firstItem="68l-vv-kWj" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leadingMargin" id="qLu-ZF-6pC"/>
                                             <constraint firstItem="ilc-YC-gzg" firstAttribute="leading" secondItem="MiH-pD-jjS" secondAttribute="leading" constant="5" id="sWK-dC-AWa"/>
                                         </constraints>
@@ -103,17 +108,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="photoCollection" destination="p4Z-Xs-Wjt" id="o2z-qm-8jU"/>
+                        <outlet property="photoCollection" destination="p4Z-Xs-Wjt" id="VlV-5D-Tvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="90" y="27"/>
         </scene>
-        <!--Add To Favorites View Controller-->
+        <!--Photo Journal Detail View Controller-->
         <scene sceneID="ii4-pt-UMe">
             <objects>
-                <viewController id="64c-Kx-BKk" customClass="AddToFavoritesViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="64c-Kx-BKk" customClass="PhotoJournalDetailViewController" customModule="PhotoJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ui-cj-Q2b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,9 +126,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N76-MD-w3U">
                                 <rect key="frame" x="0.0" y="33" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Cancel" width="85" id="EJO-Rc-JpA"/>
+                                    <barButtonItem title="Cancel" width="85" id="EJO-Rc-JpA">
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="64c-Kx-BKk" id="RcE-4v-nN7"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="mU8-QR-l64"/>
-                                    <barButtonItem title="Save" id="F7N-8w-XCJ"/>
+                                    <barButtonItem title="Save" id="F7N-8w-XCJ">
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="64c-Kx-BKk" id="HtT-PI-Rtw"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JV2-v9-gtd">
@@ -142,9 +155,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5Q-O7-YzE">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Photo Library" id="6O0-ki-mw0"/>
+                                    <barButtonItem title="Photo Library" id="6O0-ki-mw0">
+                                        <connections>
+                                            <action selector="photoLibraryPressed:" destination="64c-Kx-BKk" id="aoO-Ig-4sL"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ssr-HV-ivo"/>
-                                    <barButtonItem style="done" systemItem="camera" id="CD0-iS-Fd3"/>
+                                    <barButtonItem style="done" systemItem="camera" id="CD0-iS-Fd3">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="64c-Kx-BKk" id="pTN-ap-81t"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -166,6 +187,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uio-df-IFX"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="CD0-iS-Fd3" id="nCN-wB-YbT"/>
+                        <outlet property="photoDescription" destination="JV2-v9-gtd" id="XAD-IF-Qy9"/>
+                        <outlet property="photoImage" destination="vis-PM-RBC" id="pdR-YO-ibu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1v-kV-6VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

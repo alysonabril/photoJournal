@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C62E7A8021ED55C000F3A542 /* AddToFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E7A7F21ED55C000F3A542 /* AddToFavoritesViewController.swift */; };
 		C65F44A921ED160E003617BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F44A821ED160E003617BA /* AppDelegate.swift */; };
-		C65F44AB21ED160E003617BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F44AA21ED160E003617BA /* ViewController.swift */; };
+		C65F44AB21ED160E003617BA /* PhotoJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F44AA21ED160E003617BA /* PhotoJournalViewController.swift */; };
 		C65F44AE21ED160E003617BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F44AC21ED160E003617BA /* Main.storyboard */; };
 		C65F44B021ED160F003617BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65F44AF21ED160F003617BA /* Assets.xcassets */; };
 		C65F44B321ED160F003617BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F44B121ED160F003617BA /* LaunchScreen.storyboard */; };
@@ -17,13 +16,13 @@
 		C6767CC521EFE4E1007D7BA6 /* PhotoJournalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */; };
 		C6767CC821EFE53A007D7BA6 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */; };
 		C6767CCC21EFEB5B007D7BA6 /* PhotoJournalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */; };
+		C6C8EC7A21FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8EC7921FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C62E7A7F21ED55C000F3A542 /* AddToFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToFavoritesViewController.swift; sourceTree = "<group>"; };
 		C65F44A521ED160E003617BA /* PhotoJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65F44A821ED160E003617BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C65F44AA21ED160E003617BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C65F44AA21ED160E003617BA /* PhotoJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalViewController.swift; sourceTree = "<group>"; };
 		C65F44AD21ED160E003617BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C65F44AF21ED160F003617BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C65F44B221ED160F003617BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalModel.swift; sourceTree = "<group>"; };
 		C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalCell.swift; sourceTree = "<group>"; };
+		C6C8EC7921FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,7 @@
 		C62E7A8221EE333500F3A542 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */,
 				C65F44AC21ED160E003617BA /* Main.storyboard */,
 			);
 			path = Views;
@@ -66,9 +67,8 @@
 		C62E7A8321EE333F00F3A542 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C65F44AA21ED160E003617BA /* ViewController.swift */,
-				C62E7A7F21ED55C000F3A542 /* AddToFavoritesViewController.swift */,
-				C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */,
+				C65F44AA21ED160E003617BA /* PhotoJournalViewController.swift */,
+				C6C8EC7921FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C6767CBD21EFE404007D7BA6 /* PhotoJournal.swift */,
+				C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				C6767CC621EFE4E7007D7BA6 /* Photo Helper */,
+				C62E7A8221EE333500F3A542 /* Views */,
 				C62E7A8421EE336000F3A542 /* Models */,
 				C62E7A8321EE333F00F3A542 /* Controller */,
-				C62E7A8221EE333500F3A542 /* Views */,
 				C62E7A8121EE331600F3A542 /* supportingFiles */,
 				C65F44B421ED160F003617BA /* Info.plist */,
 			);
@@ -113,7 +114,6 @@
 		C6767CC621EFE4E7007D7BA6 /* Photo Helper */ = {
 			isa = PBXGroup;
 			children = (
-				C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */,
 				C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */,
 			);
 			path = "Photo Helper";
@@ -190,9 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C8EC7A21FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift in Sources */,
 				C6767CCC21EFEB5B007D7BA6 /* PhotoJournalCell.swift in Sources */,
-				C62E7A8021ED55C000F3A542 /* AddToFavoritesViewController.swift in Sources */,
-				C65F44AB21ED160E003617BA /* ViewController.swift in Sources */,
+				C65F44AB21ED160E003617BA /* PhotoJournalViewController.swift in Sources */,
 				C6767CC521EFE4E1007D7BA6 /* PhotoJournalModel.swift in Sources */,
 				C6767CC821EFE53A007D7BA6 /* DataPersistenceManager.swift in Sources */,
 				C6767CBE21EFE404007D7BA6 /* PhotoJournal.swift in Sources */,
