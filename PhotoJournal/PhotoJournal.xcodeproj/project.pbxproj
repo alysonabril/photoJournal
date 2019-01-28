@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64C90F821FEAEEB009BF9B5 /* PhotoJournalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64C90F721FEAEEB009BF9B5 /* PhotoJournalClient.swift */; };
 		C65F44A921ED160E003617BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F44A821ED160E003617BA /* AppDelegate.swift */; };
 		C65F44AB21ED160E003617BA /* PhotoJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F44AA21ED160E003617BA /* PhotoJournalViewController.swift */; };
 		C65F44AE21ED160E003617BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F44AC21ED160E003617BA /* Main.storyboard */; };
@@ -16,10 +17,12 @@
 		C6767CC521EFE4E1007D7BA6 /* PhotoJournalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */; };
 		C6767CC821EFE53A007D7BA6 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */; };
 		C6767CCC21EFEB5B007D7BA6 /* PhotoJournalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */; };
+		C6A6114921FF94980060945F /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6114821FF94980060945F /* ItemModel.swift */; };
 		C6C8EC7A21FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8EC7921FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C64C90F721FEAEEB009BF9B5 /* PhotoJournalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalClient.swift; sourceTree = "<group>"; };
 		C65F44A521ED160E003617BA /* PhotoJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65F44A821ED160E003617BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C65F44AA21ED160E003617BA /* PhotoJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		C6767CC421EFE4E1007D7BA6 /* PhotoJournalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalModel.swift; sourceTree = "<group>"; };
 		C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		C6767CCB21EFEB5B007D7BA6 /* PhotoJournalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalCell.swift; sourceTree = "<group>"; };
+		C6A6114821FF94980060945F /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		C6C8EC7921FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,8 @@
 		C6767CC621EFE4E7007D7BA6 /* Photo Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C64C90F721FEAEEB009BF9B5 /* PhotoJournalClient.swift */,
+				C6A6114821FF94980060945F /* ItemModel.swift */,
 				C6767CC721EFE53A007D7BA6 /* DataPersistenceManager.swift */,
 			);
 			path = "Photo Helper";
@@ -193,10 +199,12 @@
 				C6C8EC7A21FBDFFF00DA9B4F /* PhotoJournalDetailViewController.swift in Sources */,
 				C6767CCC21EFEB5B007D7BA6 /* PhotoJournalCell.swift in Sources */,
 				C65F44AB21ED160E003617BA /* PhotoJournalViewController.swift in Sources */,
+				C6A6114921FF94980060945F /* ItemModel.swift in Sources */,
 				C6767CC521EFE4E1007D7BA6 /* PhotoJournalModel.swift in Sources */,
 				C6767CC821EFE53A007D7BA6 /* DataPersistenceManager.swift in Sources */,
 				C6767CBE21EFE404007D7BA6 /* PhotoJournal.swift in Sources */,
 				C65F44A921ED160E003617BA /* AppDelegate.swift in Sources */,
+				C64C90F821FEAEEB009BF9B5 /* PhotoJournalClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

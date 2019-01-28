@@ -10,7 +10,7 @@ import Foundation
 
 final class DataPersistenceManager {
     
-    private static let filename = "UIImage.plist"
+    //private static let filename = "UIImage.plist"
     static func documentsDirectory() -> URL {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
